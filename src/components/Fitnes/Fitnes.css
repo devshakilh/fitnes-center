@@ -74,3 +74,22 @@
     padding-top: 5px;
     border-radius: 5px;
 }
+
+
+
+
+.qus {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+.qus-font {
+    font-weight: 500;
+    font-size: large;
+}

@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import Gym from '../Gym/Gym';
+import Selected from '../Selected/Selected';
 import './Fitnes.css';
 
 
 const Fitnes = () => {
     const [players, setPlayers] = useState([]);
+    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch('players.json')
             .then(res => res.json())
             .then(data => setPlayers(data))
     }, []);
+    const handleClick = (players) => {
+        console.log(players);
+        const newCart = [...cart, players];
+        setCart(newCart);
+    }
+
+
     return (
         <div>
 
@@ -17,12 +26,19 @@ const Fitnes = () => {
 
                 <div className="left">
                     <h1>Barishl-Fitnes-Center</h1>
+
                     <h3>Select today's exercise</h3>
                     <div className='cart'>
                         {
-                            players.map(players => <Gym players={players}></Gym>)
+                            players.map(players => <Gym players={players}
+                                handleClick={handleClick}
+                            ></Gym>)
                         }
                     </div>
+
+
+
+
                 </div>
 
                 {/* right side ------------- */}
@@ -51,25 +67,20 @@ const Fitnes = () => {
                             <span>Age</span>
                         </div>
                     </div>
-                    <h3>Add A Break</h3>
-                    <div className='add-break'>
-                        <p>10s</p>
-                        <p>20s</p>
-                        <p>30s</p>
-                        <p>40s</p>
-                        <p>50s</p>
-                    </div>
-                    <h2>Exercise Details</h2>
-                    <div className='exercise-time'>
-                        <h3>Exercise time</h3>
-                        <span>00</span>seconds
-                    </div>
-                    <div className='break-time'>
-                        <h3>Break Time</h3>
-                        <span>00</span>seconds
-                    </div>
-                    <button className='activity-complete'>Activity Complete</button>
+
+                    <Selected ></Selected>
                 </div>
+
+            </div>
+
+            <div className='qus'>
+
+                <div>
+                    <h1>How dose react work?</h1>
+                    <p className='qus-font'> React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or
+                        props</p>
+                </div>
+
             </div>
         </div>
     );
