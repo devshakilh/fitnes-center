@@ -80,6 +80,11 @@ const Fitnes = () => {
                     <p className='qus-font'> React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or
                         props</p>
                 </div>
+                <div>
+                    <h1>What is diffrence props and state</h1>
+                    <p className='qus-font'>Props are used to pass data from one component to another. The state is a local data storage that is local to
+                        the component only and cannot be passed to other components.J</p>
+                </div>
 
             </div>
         </div>
