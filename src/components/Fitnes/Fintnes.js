@@ -85,7 +85,15 @@ const Fitnes = () => {
                     <p className='qus-font'>Props are used to pass data from one component to another. The state is a local data storage that is local to
                         the component only and cannot be passed to other components.J</p>
                 </div>
+                <div>
+                    <h1>what else dose the useeffect api do other load data?</h1>
+                    <p className='qus-font'>Running on state change: validating input field <br />
+                        Running on state change: live filtering <br />
+                        Running on state change: trigger animation on new array value <br />
+                        Running on props change: update paragraph list on fetched API data update  <br />
 
+                    </p>
+                </div>
             </div>
         </div>
     );
