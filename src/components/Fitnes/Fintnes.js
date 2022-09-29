@@ -7,11 +7,7 @@ import './Fitnes.css';
 const Fitnes = () => {
     const [players, setPlayers] = useState([]);
     const [cart, setCart] = useState([]);
-    useEffect(() => {
-        fetch('players.json')
-            .then(res => res.json())
-            .then(data => setPlayers(data))
-    }, []);
+
     const handleClick = (players) => {
         console.log(players);
         const newCart = [...cart, players];
