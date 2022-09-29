@@ -7,15 +7,21 @@ import './Fitnes.css';
 const Fitnes = () => {
     const [players, setPlayers] = useState([]);
     const [cart, setCart] = useState([]);
+    let total = 0;
+    for (const players of cart) {
+        total = cart;
+
+
+    }
     useEffect(() => {
         fetch('players.json')
             .then(res => res.json())
             .then(data => setPlayers(data))
     }, []);
     const handleClick = (players) => {
-        console.log(players);
+        // console.log(players);
         const newCart = [...cart, players];
-        setCart(newCart);
+        setCart(newCart, cart);
     }
 
 
@@ -48,27 +54,27 @@ const Fitnes = () => {
                             <img src="" alt="" />
                         </div>
                         <div className='name-and-ct'>
-                            <h2>Shakil Hossain</h2>
+                            <h2> MD Shakil Hossain</h2>
                             <p>Barishal,Bangladesh</p>
                         </div>
 
                     </div>
                     <div className='my-height'>
-                        <div >
+                        <div className='weight-age'>
                             <h1>55</h1>
                             <span>weight</span>
-                        </div>
-                        <div>
+
+
                             <h1>5.5</h1>
                             <span>Height</span>
-                        </div>
-                        <div>
+
+
                             <h1>18</h1>
                             <span>Age</span>
                         </div>
                     </div>
 
-                    <Selected ></Selected>
+                    <Selected cart={cart}></Selected>
                 </div>
 
             </div>
