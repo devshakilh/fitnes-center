@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Walking",
+        "details_short": "The whole body is exercised",
+        "age": 18,
+        "time": 30,
+        "img": "https://gymwholesalers.co.za/wp-content/uploads/2017/12/10342898_732257213499138_3744945565540940496_n.jpg"
+    },
+    {
+        "name": "Chest Exercise",
+        "details_short": "There are so many chest exercises and workouts to try,",
+        "age": 18,
+        "time": 35,
+        "img": "https://i.ytimg.com/vi/gey73xiS8F4/maxresdefault.jpg"
+    },
+    {
+        "name": "Dhumble",
+        "details_short": "The best dumbbell exercises proved their worth when we al",
+        "age": 20,
+        "time": 30,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-I2rcHYiTHqP8aAX8_1A3__ez8i1-Yb2J9g&usqp=CAU"
+    },
+    {
+        "name": "Ball gym",
+        "details_short": "Working out with gym balls are one of the best ways to improve your. ",
+        "age": 18,
+        "time": 30,
+        "img": "https://image.shutterstock.com/image-photo/woman-working-out-exercise-ball-260nw-425454424.jpg"
+    },
+    {
+        "name": "Upper Body",
+        "details_short": "They are arguably the 6 best exercises for building upper body.",
+        "age": 18,
+        "time": 40,
+        "img": "https://cdn.muscleandstrength.com/sites/default/files/field/image/workout/3-day-beginner-workout-thumb.jpg"
+    },
+    {
+        "name": "Abs Workuts",
+        "details_short": "Targeted abs workouts that can benefit upper abs",
+        "age": 18,
+        "time": 35,
+        "img": "https://www.muscleandfitness.com/wp-content/uploads/2017/07/1109-ryan-terry-weighted-crunch-abs.jpg?quality=86&strip=all"
+    }
+]

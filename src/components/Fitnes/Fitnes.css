@@ -1,0 +1,76 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+
+}
+
+.left {
+    background-color: #e8eff3;
+    margin: auto;
+}
+
+
+/*----------- right side ------ */
+.right-side {
+    /* margin: 20px 20px; */
+    margin: auto;
+}
+
+.name-area {
+    display: flex;
+}
+
+.my-height {
+    background-color: gainsboro;
+    border-radius: 10px;
+    width: 60px;
+    margin: auto;
+
+}
+
+
+
+.add-break {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(235, 221, 221);
+    border-radius: 8px;
+}
+
+.exercise-time {
+    background-color: #e8eff3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.break-time {
+    background-color: #e8eff3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.activity-complete {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin-top: 15px;
+    padding-bottom: 12px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
