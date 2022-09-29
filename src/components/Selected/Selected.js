@@ -8,7 +8,14 @@ const Selected = (props) => {
     return (
         <div>
 
-            <h1>thi sisi </h1>
+            <h3>Add A Break</h3>
+            <div className='add-break'>
+                <p>10s</p>
+                <p>20s</p>
+                <p>30s</p>
+                <p>40s</p>
+                <p>50s</p>
+            </div>
             <h2>Exercise Details</h2>
             <div className='exercise-time'>
                 <h3>Exercise time{props.length}
