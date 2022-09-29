@@ -22,10 +22,7 @@ const Selected = (props) => {
                 </h3>
                 <span>00</span>seconds
             </div>
-            <div className='break-time'>
-                <h3>Break Time</h3>
-                <span>00</span>seconds
-            </div>
+
             <button className='activity-complete'>Activity Complete</button>
 
 
